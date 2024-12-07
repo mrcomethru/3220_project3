@@ -1,36 +1,49 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Button 1 -->
+    <!-- Button 1: Beach with an icon on the left -->
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Image 1"
+        android:layout_width="240dp"
+        android:layout_height="76dp"
+        android:text="@string/image_1_beach"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="120dp"
+        app:backgroundTint="?attr/buttonColor1"
+        android:drawableLeft="@drawable/ic_bach"
+        app:iconSize="24dp"
+        android:drawablePadding="8dp" />
+        /> <!-- Icon to the left -->
 
-    <!-- Button 2 -->
+    <!-- Button 2: Mountain with an icon on the left -->
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Image 2"
+        android:layout_width="240dp"
+        android:layout_height="76dp"
+        android:text="@string/image_2_mountain"
         android:layout_below="@id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="24dp"
+        app:backgroundTint="?attr/buttonColor2"
+        android:drawableLeft="@drawable/ic_mountain"
+        android:drawablePadding="8dp" />
+        /> <!-- Icon to the left -->
 
-    <!-- Button 3 -->
+    <!-- Button 3: City with an icon on the left -->
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Show Image 3"
+        android:layout_width="240dp"
+        android:layout_height="76dp"
+        android:text="@string/image_3_city"
         android:layout_below="@id/button2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="24dp"
+        app:backgroundTint="?attr/buttonColor3"
+        android:drawableLeft="@drawable/ic_city"
+        android:drawablePadding="8dp" />
+        /> <!-- Icon to the left -->
 
     <!-- ImageView to display images -->
     <ImageView
@@ -39,5 +52,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/button3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp" />
+
 </RelativeLayout>
